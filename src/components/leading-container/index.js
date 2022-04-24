@@ -3,8 +3,11 @@ import styled from 'styled-components';
 import media from '../../media';
 import { primaryColor, textColorDark } from '../UI/colors'
 
-const LeadingContainer = styled.div`
-    height: 30vh;
+import LeadingText from "../leading-text";
+import MutedText from "../muted-text";
+
+const Container = styled.div`
+    height: 45vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -24,5 +27,14 @@ const LeadingContainer = styled.div`
         width: 40%;
     `};
 `;
+
+const LeadingContainer = () => {
+    return (
+        <Container>
+            <LeadingText>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</LeadingText>
+            <MutedText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh tristique lobortis consectetur sit fermentum.</MutedText>
+        </Container>
+    );
+}
 
 export default LeadingContainer;
