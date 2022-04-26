@@ -8,7 +8,7 @@ const Container = styled.div`
     display: flex;
     background-color: ${lightBackgroundColor};
 
-    flex-direction: column;
+    flex-direction: row;
 `;
 
 export default Container;
